@@ -1,0 +1,24 @@
+{
+  "title": "Photography",
+  "subtitle": "Spaces, stories & light",
+  "about": "I'm a photographer working across interiors, lifestyle, and portraits. I create warm, inviting images that capture light, atmosphere, and the stories behind each space and subject.",
+  "contact": {
+    "email": "hello@example.com",
+    "location": "Available for travel"
+  },
+  "instagram": "https://instagram.com/",
+  "testimonials": [
+    {
+      "quote": "The photos completely transformed our listing. Bookings went up within weeks.",
+      "author": "Airbnb Host"
+    },
+    {
+      "quote": "Professional, creative, and so easy to work with. Highly recommend.",
+      "author": "Property Manager"
+    },
+    {
+      "quote": "She captured the atmosphere of our home perfectly. Guests always mention the photos.",
+      "author": "Superhost"
+    }
+  ]
+}
