@@ -1,7 +1,7 @@
 {
   "title": "Photography",
-  "subtitle": "Interior & lifestyle photography for hosts",
-  "about": "I photograph interiors and lifestyle for Airbnb hosts and vacation rentals. Warm, inviting images that help guests picture themselves in your space — and help your listing stand out when it matters most.",
+  "subtitle": "Golden hour · Family · Pet sessions",
+  "about": "I offer golden hour photoshoots, doggy photoshoots, and family sessions. Warm, natural light and a relaxed shoot — your story, captured.",
   "contact": {
     "email": "hello@example.com",
     "location": "Available for travel"
@@ -9,16 +9,16 @@
   "instagram": "https://instagram.com/",
   "testimonials": [
     {
-      "quote": "The photos completely transformed our listing. Bookings went up within weeks.",
-      "author": "Airbnb Host"
+      "quote": "The golden hour light was magical. We couldn't be happier with how the photos turned out.",
+      "author": "Client"
     },
     {
-      "quote": "Professional, creative, and so easy to work with. Highly recommend.",
-      "author": "Property Manager"
+      "quote": "She was so patient with our dog — the photos are absolutely adorable.",
+      "author": "Client"
     },
     {
-      "quote": "She captured the atmosphere of our home perfectly. Guests always mention the photos.",
-      "author": "Superhost"
+      "quote": "Beautiful family photos we'll treasure. Relaxed, fun, and so easy to work with.",
+      "author": "Client"
     }
   ]
 }
