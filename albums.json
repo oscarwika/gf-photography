@@ -2,16 +2,19 @@
   {
     "id": "interiors",
     "title": "Interiors",
-    "images": ["cover.svg", "01.svg", "02.svg", "03.svg"]
+    "cover": "cover.svg",
+    "images": ["01.svg", "02.svg", "03.svg"]
   },
   {
     "id": "lifestyle",
     "title": "Lifestyle",
-    "images": ["cover.svg", "01.svg", "02.svg"]
+    "cover": "cover.svg",
+    "images": ["01.svg", "02.svg"]
   },
   {
     "id": "portraits",
     "title": "Portraits",
-    "images": ["cover.svg", "01.svg", "02.svg", "03.svg", "04.svg"]
+    "cover": "cover.svg",
+    "images": ["01.svg", "02.svg", "03.svg", "04.svg"]
   }
 ]

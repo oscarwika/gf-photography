@@ -17,7 +17,8 @@ function albumImagePath(album, filename) {
 }
 
 function coverFor(album) {
-  return albumImagePath(album, album.images[0]);
+  const cover = album.cover || album.images[0];
+  return albumImagePath(album, cover);
 }
 
 async function loadData() {
