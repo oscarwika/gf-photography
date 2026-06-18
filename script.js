@@ -13,7 +13,8 @@ const albumTitle = document.getElementById("album-title");
 const albumCounter = document.getElementById("album-counter");
 
 function albumImagePath(album, filename) {
-  return `albums/${album.id}/${filename}`;
+  const folder = album.folder || `albums/${album.id}`;
+  return `${folder}/${filename}`;
 }
 
 function coverFor(album) {
@@ -24,7 +25,7 @@ function coverFor(album) {
 async function loadData() {
   const [siteResponse, albumsResponse] = await Promise.all([
     fetch("site.json"),
-    fetch("albums.json"),
+    fetch("albums.generated.json"),
   ]);
 
   if (!siteResponse.ok || !albumsResponse.ok) {
@@ -180,7 +181,7 @@ async function init() {
     bindEvents();
   } catch (error) {
     workGrid.innerHTML =
-      "<p>Could not load albums. If you are viewing locally, run a simple server from the project folder.</p>";
+      "<p>Could not load albums. Run <code>python3 scripts/generate_albums.py</code> if you are viewing locally.</p>";
     console.error(error);
   }
 }

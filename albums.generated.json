@@ -1,0 +1,35 @@
+[
+  {
+    "id": "golden-hour",
+    "title": "Golden Hour",
+    "folder": "albums/golden-hour",
+    "cover": "cover.svg",
+    "images": [
+      "01.svg",
+      "02.svg",
+      "03.svg"
+    ]
+  },
+  {
+    "id": "doggy",
+    "title": "Doggy Photoshoot",
+    "folder": "albums/doggy",
+    "cover": "cover.svg",
+    "images": [
+      "01.svg",
+      "02.svg"
+    ]
+  },
+  {
+    "id": "family",
+    "title": "Family Session",
+    "folder": "albums/family",
+    "cover": "cover.svg",
+    "images": [
+      "01.svg",
+      "02.svg",
+      "03.svg",
+      "04.svg"
+    ]
+  }
+]

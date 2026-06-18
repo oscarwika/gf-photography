@@ -1,0 +1,23 @@
+name: Update album manifest
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate albums.generated.json
+        run: python3 scripts/generate_albums.py
+
+      - name: Commit manifest if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update album manifest
+          file_pattern: albums.generated.json

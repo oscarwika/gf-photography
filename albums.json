@@ -2,19 +2,16 @@
   {
     "id": "golden-hour",
     "title": "Golden Hour",
-    "cover": "cover.svg",
-    "images": ["01.svg", "02.svg", "03.svg"]
+    "folder": "albums/golden-hour"
   },
   {
     "id": "doggy",
     "title": "Doggy Photoshoot",
-    "cover": "cover.svg",
-    "images": ["01.svg", "02.svg"]
+    "folder": "albums/doggy"
   },
   {
     "id": "family",
     "title": "Family Session",
-    "cover": "cover.svg",
-    "images": ["01.svg", "02.svg", "03.svg", "04.svg"]
+    "folder": "albums/family"
   }
 ]
