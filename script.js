@@ -139,22 +139,17 @@ function bindEvents() {
     showNext(1);
   });
 
-  document.getElementById("album-mobile-prev").addEventListener("click", () => {
-    showNext(-1);
-  });
-
-  document.getElementById("album-mobile-next").addEventListener("click", () => {
-    showNext(1);
-  });
-
   const albumStage = document.getElementById("album-stage");
   let touchStartX = 0;
   let touchStartY = 0;
+  let touchOnNav = false;
 
   albumStage.addEventListener(
     "touchstart",
     (event) => {
       if (albumView.hidden || event.touches.length !== 1) return;
+      touchOnNav = Boolean(event.target.closest(".album-nav"));
+      if (touchOnNav) return;
       touchStartX = event.touches[0].clientX;
       touchStartY = event.touches[0].clientY;
     },
@@ -164,7 +159,7 @@ function bindEvents() {
   albumStage.addEventListener(
     "touchend",
     (event) => {
-      if (albumView.hidden || !event.changedTouches.length) return;
+      if (albumView.hidden || !event.changedTouches.length || touchOnNav) return;
 
       const touchEndX = event.changedTouches[0].clientX;
       const touchEndY = event.changedTouches[0].clientY;
