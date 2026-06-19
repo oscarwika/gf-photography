@@ -1,7 +1,7 @@
 [
   {
     "id": "solo-portraits",
-    "title": "Sólo portraits",
+    "title": "Solo portraits",
     "folder": "albums/solo-portraits",
     "cover": "cover.png",
     "images": [
@@ -16,7 +16,7 @@
     "id": "nature",
     "title": "Nature",
     "folder": "albums/nature",
-    "cover": "cover.png",
+    "cover": "04.png",
     "images": [
       "cover.png",
       "01.png",

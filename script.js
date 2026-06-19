@@ -95,7 +95,8 @@ function openAlbum(albumId) {
   if (!album || !album.images.length) return;
 
   state.activeAlbum = album;
-  state.activeIndex = 0;
+  const startImage = album.cover || album.images[0];
+  state.activeIndex = Math.max(0, album.images.indexOf(startImage));
   updateAlbumView();
   albumView.hidden = false;
   document.body.classList.add("album-open");

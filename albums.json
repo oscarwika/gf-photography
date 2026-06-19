@@ -1,13 +1,15 @@
 [
   {
     "id": "solo-portraits",
-    "title": "Sólo portraits",
+    "title": "Solo portraits",
     "folder": "albums/solo-portraits"
   },
   {
     "id": "nature",
     "title": "Nature",
-    "folder": "albums/nature"
+    "folder": "albums/nature",
+    "cover": "04.png",
+    "images": ["cover.png", "01.png", "02.png", "03.png", "04.png", "05.png"]
   },
   {
     "id": "doggy",
