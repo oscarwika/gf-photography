@@ -139,6 +139,48 @@ function bindEvents() {
     showNext(1);
   });
 
+  document.getElementById("album-mobile-prev").addEventListener("click", () => {
+    showNext(-1);
+  });
+
+  document.getElementById("album-mobile-next").addEventListener("click", () => {
+    showNext(1);
+  });
+
+  const albumStage = document.getElementById("album-stage");
+  let touchStartX = 0;
+  let touchStartY = 0;
+
+  albumStage.addEventListener(
+    "touchstart",
+    (event) => {
+      if (albumView.hidden || event.touches.length !== 1) return;
+      touchStartX = event.touches[0].clientX;
+      touchStartY = event.touches[0].clientY;
+    },
+    { passive: true }
+  );
+
+  albumStage.addEventListener(
+    "touchend",
+    (event) => {
+      if (albumView.hidden || !event.changedTouches.length) return;
+
+      const touchEndX = event.changedTouches[0].clientX;
+      const touchEndY = event.changedTouches[0].clientY;
+      const deltaX = touchEndX - touchStartX;
+      const deltaY = touchEndY - touchStartY;
+      const minSwipe = 50;
+
+      if (Math.abs(deltaX) < minSwipe || Math.abs(deltaX) < Math.abs(deltaY)) {
+        return;
+      }
+
+      showNext(deltaX < 0 ? 1 : -1);
+    },
+    { passive: true }
+  );
+
   window.addEventListener("keydown", (event) => {
     if (albumView.hidden) return;
 

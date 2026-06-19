@@ -37,7 +37,8 @@ def scan_folder(folder_path: Path) -> Tuple[Optional[str], List[str]]:
         None,
     )
     if cover:
-        images = [entry.name for entry in files if entry.name != cover]
+        others = [entry.name for entry in files if entry.name != cover]
+        images = [cover, *others]
     else:
         images = [entry.name for entry in files]
         cover = images[0]
