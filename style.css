@@ -139,14 +139,6 @@ button {
   object-fit: cover;
 }
 
-.work-title {
-  margin: 0.9rem 0 0;
-  font-family: var(--serif);
-  font-size: 1.35rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-}
-
 .about-text {
   max-width: 42rem;
   margin: 0 auto;
@@ -176,9 +168,8 @@ button {
 
 .testimonial-author {
   margin: 0;
-  font-size: 0.82rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
   color: var(--muted);
 }
 
@@ -197,23 +188,6 @@ button {
 
 .site-footer {
   padding: 2rem 1.5rem 3rem;
-  text-align: center;
-}
-
-.instagram-link {
-  display: inline-flex;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.instagram-link:hover {
-  opacity: 1;
-}
-
-.instagram-link svg {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
 }
 
 .album-view {
@@ -231,8 +205,8 @@ button {
 }
 
 .album-toolbar {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 1.25rem 1.5rem;
@@ -240,22 +214,13 @@ button {
 }
 
 .back-button {
-  justify-self: start;
   font-size: 0.8rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.album-title {
-  margin: 0;
-  font-family: var(--serif);
-  font-size: 1.4rem;
-  text-align: center;
-}
-
 .album-counter {
   margin: 0;
-  justify-self: end;
   font-size: 0.8rem;
   color: var(--muted);
   letter-spacing: 0.1em;

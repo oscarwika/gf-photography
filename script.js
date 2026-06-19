@@ -9,7 +9,6 @@ const page = document.getElementById("page");
 const albumView = document.getElementById("album-view");
 const workGrid = document.getElementById("work-grid");
 const albumImage = document.getElementById("album-image");
-const albumTitle = document.getElementById("album-title");
 const albumCounter = document.getElementById("album-counter");
 
 function albumImagePath(album, filename) {
@@ -48,6 +47,7 @@ function renderSite() {
 
   const contact = document.getElementById("contact-details");
   contact.innerHTML = `
+    <p><a href="tel:+17872192163">${site.contact.phone}</a></p>
     <p><a href="mailto:${site.contact.email}">${site.contact.email}</a></p>
     <p>${site.contact.location}</p>
   `;
@@ -63,9 +63,6 @@ function renderSite() {
       `
     )
     .join("");
-
-  const instagram = document.getElementById("instagram-link");
-  instagram.href = site.instagram;
 }
 
 function renderWorkGrid() {
@@ -81,7 +78,6 @@ function renderWorkGrid() {
           <div class="work-thumb">
             <img src="${coverFor(album)}" alt="${album.title}" loading="lazy" />
           </div>
-          <h3 class="work-title">${album.title}</h3>
         </button>
       `
     )
@@ -119,7 +115,6 @@ function updateAlbumView() {
   if (!activeAlbum) return;
 
   const filename = activeAlbum.images[activeIndex];
-  albumTitle.textContent = activeAlbum.title;
   albumCounter.textContent = `${activeIndex + 1} / ${activeAlbum.images.length}`;
   albumImage.src = albumImagePath(activeAlbum, filename);
   albumImage.alt = `${activeAlbum.title} photo ${activeIndex + 1}`;

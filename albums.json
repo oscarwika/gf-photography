@@ -1,17 +1,17 @@
 [
   {
     "id": "golden-hour",
-    "title": "Golden Hour",
+    "title": "Sólo portraits",
     "folder": "albums/golden-hour"
   },
   {
     "id": "doggy",
-    "title": "Doggy Photoshoot",
+    "title": "Nature",
     "folder": "albums/doggy"
   },
   {
     "id": "family",
-    "title": "Family Session",
+    "title": "Doggy Photoshoot",
     "folder": "albums/family"
   }
 ]

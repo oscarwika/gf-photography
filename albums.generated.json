@@ -1,35 +1,37 @@
 [
   {
     "id": "golden-hour",
-    "title": "Golden Hour",
+    "title": "Sólo portraits",
     "folder": "albums/golden-hour",
-    "cover": "cover.svg",
+    "cover": "cover.png",
     "images": [
-      "01.svg",
-      "02.svg",
-      "03.svg"
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png"
     ]
   },
   {
     "id": "doggy",
-    "title": "Doggy Photoshoot",
+    "title": "Nature",
     "folder": "albums/doggy",
-    "cover": "cover.svg",
+    "cover": "cover.png",
     "images": [
-      "01.svg",
-      "02.svg"
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png"
     ]
   },
   {
     "id": "family",
-    "title": "Family Session",
+    "title": "Doggy Photoshoot",
     "folder": "albums/family",
-    "cover": "cover.svg",
+    "cover": "cover.png",
     "images": [
-      "01.svg",
-      "02.svg",
-      "03.svg",
-      "04.svg"
+      "01.png",
+      "02.png"
     ]
   }
 ]
